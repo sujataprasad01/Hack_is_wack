@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Courses</title>
+    <link rel="stylesheet" href="/admin_dash/add.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Course</h2>
+        <form id="addCourseForm">
+            <div class="input-wrapper">
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" name="courseName" required>
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" name="instructor" required>
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" name="duration" required>
+            </div>
+            
+            <button type="submit" class="add-button">Add Course</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Manage Courses</h2>
+        <div id="coursesList" class="course-grid">
+            <!-- Existing courses will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
